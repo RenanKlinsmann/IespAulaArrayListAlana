@@ -30,25 +30,11 @@ public class Programa {
 			list.add(new Conta(numero, nome, saldo));
 
 		}
-		/*System.out.println();
-		System.out.print("Digite o numero da conta que terá o saldo aumentado: ");
-		int numero = sc.nextInt();
-		Conta cont = list.stream().filter(x -> x.getNumero() == numero).findFirst().orElse(null);
-		if (cont == null) {
-			System.out.println("Este ID não existe!");
-		}else {
-			System.out.print("Digite a Porcentagem: ");
-			double porcentagem = sc.nextDouble();
-			cont.aumentaSaldo(porcentagem);
-*/
+		
 		System.out.println();
-
 		System.out.println("Lista de Contas:");
-
 		for (Conta obj : list) {
-
 			System.out.println(obj);
-
 		}
 		
 
