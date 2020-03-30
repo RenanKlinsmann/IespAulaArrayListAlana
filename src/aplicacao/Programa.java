@@ -12,7 +12,9 @@ public class Programa {
 		Locale.setDefault(Locale.US);
 		Scanner sc = new Scanner(System.in);
 		
+		
 		List<Conta> list = new ArrayList<>();
+		try {
 		System.out.print("Quantos Contas serão registrados? ");
 
 		int n = sc.nextInt();
@@ -36,11 +38,11 @@ public class Programa {
 		for (Conta obj : list) {
 			System.out.println(obj);
 		}
-		
-
-		
-		
-		
+	
+		}catch(RuntimeException e){
+			System.out.println("Erro Inesperado!");
+			System.out.println("Reinicie o Programa e verifique se esta fazendo correto!");
+		}
 		sc.close();
 	}
 

@@ -1,5 +1,7 @@
 package entidades;
 
+
+
 public class Conta {
 	
 	private int numero;
@@ -34,6 +36,7 @@ public class Conta {
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
+ 
 	public String toString() {
 		return "N° da Conta "
 				+ numero
