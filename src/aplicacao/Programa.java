@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
 
+import entidades.CalculadoraDeservico;
 import entidades.Conta;
 
 public class Programa {
@@ -37,10 +38,15 @@ public class Programa {
 		
 		System.out.println();
 		System.out.println("Lista de Contas:");
+		System.out.println();
 		Collections.sort(list);
 		for (Conta obj : list) {
 			System.out.println(obj);
 		}
+		Conta x = CalculadoraDeservico.max(list);
+		System.out.println();
+		System.out.println("Conto Com Maior Saldo -> ");
+		System.out.println(x);
 	
 		}catch(RuntimeException e){
 			System.out.println("Erro Inesperado!");

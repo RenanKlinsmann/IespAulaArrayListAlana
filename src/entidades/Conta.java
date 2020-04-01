@@ -38,7 +38,7 @@ public class Conta implements Comparable <Conta> {
 	}
  
 	public String toString() {
-		return "N° da Conta "
+		return " N° da Conta "
 				+ numero
 				+ ", Nome do Titular: "
 				+ nome
@@ -47,7 +47,7 @@ public class Conta implements Comparable <Conta> {
 	}
 	@Override
 	public int compareTo(Conta outra) {
-		return -saldo.compareTo(outra.getSaldo());
+		return saldo.compareTo(outra.getSaldo());
 	}
 	
 	
