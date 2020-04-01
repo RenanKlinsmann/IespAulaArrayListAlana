@@ -1,9 +1,11 @@
 package aplicacao;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 import java.util.Scanner;
+
 import entidades.Conta;
 
 public class Programa {
@@ -35,6 +37,7 @@ public class Programa {
 		
 		System.out.println();
 		System.out.println("Lista de Contas:");
+		Collections.sort(list);
 		for (Conta obj : list) {
 			System.out.println(obj);
 		}

@@ -2,11 +2,11 @@ package entidades;
 
 
 
-public class Conta {
+public class Conta implements Comparable <Conta> {
 	
 	private int numero;
 	private String nome;
-	private double saldo;
+	private Double saldo;
 	
 	public Conta() {	
 	}
@@ -44,6 +44,10 @@ public class Conta {
 				+ nome
 				+ ", Saldo: $ "
 				+ String.format("%.2f", saldo);
+	}
+	@Override
+	public int compareTo(Conta outra) {
+		return -saldo.compareTo(outra.getSaldo());
 	}
 	
 	
